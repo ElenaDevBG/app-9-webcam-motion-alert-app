@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 def send_email(image_path):
     load_dotenv()
 
+    print("Send email STARTED")
+
     host = "smtp.gmail.com"
     port = 465
 
@@ -36,6 +38,7 @@ def send_email(image_path):
         smtp_server.quit()
 
     print("✅ Email sent successfully!")
+    print("Send email ENDED")
 
 
 if __name__ == "__main__":
